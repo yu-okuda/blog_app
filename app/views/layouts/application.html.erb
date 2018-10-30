@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BlogApp</title>
+    <meta charset="UTF-8">
+    <title>Rails Camp Blog</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +11,17 @@
   </head>
 
   <body>
+    <header>
+    <p id="logo"><a href="">RailsCamp<span>Blog</span></a></p>
+    <nav>
+        <ul>
+            <li><a href="">トップ</a></li>
+            <li><a href="">新規投稿</a></li>
+            <div class="clear"></div>
+        </ul>
+    </nav>
+    <div class="clear"></div>
+    </header>
     <%= yield %>
   </body>
 </html>
